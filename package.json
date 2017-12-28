@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "compass-importer": "^0.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.2",
+    "gulp-watch": "^4.3.11",
+    "yargs": "^10.0.3"
+  },
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js dev --open",
+    "build": "./node_modules/gulp/bin/gulp.js build"
+  }
+}
