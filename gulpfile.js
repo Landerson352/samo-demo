@@ -14,7 +14,10 @@ gulp.task('sass', function(done) {
 			'./scss/styles.scss'
 		])
 		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.sass({ importer: compass }).on('error', plugins.sass.logError))
+		.pipe(plugins.sass({
+			importer: compass,
+			includePaths: ['./node_modules']
+		}).on('error', plugins.sass.logError))
 		.pipe(plugins.autoprefixer())
 		.pipe(plugins.sourcemaps.write())
 		.pipe(gulp.dest('./public/build'));
@@ -25,7 +28,10 @@ gulp.task('sass-min', function(done) {
 		.src([
 			'./scss/styles.scss'
 		])
-		.pipe(plugins.sass().on('error', plugins.sass.logError))
+		.pipe(plugins.sass({
+			importer: compass,
+			includePaths: ['./node_modules', '../']
+		}).on('error', plugins.sass.logError))
 		.pipe(plugins.autoprefixer())
 		.pipe(plugins.cleanCss())
 		.pipe(gulp.dest('./public/build'));

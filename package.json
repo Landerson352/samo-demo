@@ -1,4 +1,12 @@
 {
+  "name": "landerson352-samo-demo",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Landerson352/samo.git"
+  },
+  "author": "Lincoln Anderson",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.21.0",
     "compass-importer": "^0.4.1",
@@ -9,6 +17,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.2",
     "gulp-watch": "^4.3.11",
+    "landerson352-samo": "landerson352/samo",
+    "landerson352-samo-themes": "landerson352/samo-themes",
     "yargs": "^10.0.3"
   },
   "scripts": {
